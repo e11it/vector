@@ -1,0 +1,6 @@
+<%- commits.group_by(&:category).each do |category, category_commits| -%>
+#### <%= render_category(category, type_name).capitalize.pluralize %>
+
+<%= render_commits_list(category_commits) %>
+
+<%- end -%>

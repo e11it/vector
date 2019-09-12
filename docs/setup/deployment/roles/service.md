@@ -133,7 +133,7 @@ decisions, such as [load balancing][docs.service_role.load-balancing].
 [docs.syslog_source]: ../../../usage/configuration/sources/syslog.md
 [docs.tcp_sink]: ../../../usage/configuration/sinks/tcp.md
 [docs.tcp_source]: ../../../usage/configuration/sources/tcp.md
-[docs.updating]: ../../../usage/administration/updating.md
+[docs.updating]: ../../../usage/administration/updating
 [docs.vector_sink]: ../../../usage/configuration/sinks/vector.md
 [docs.vector_source]: ../../../usage/configuration/sources/vector.md
 [url.aws_elb]: https://aws.amazon.com/elasticloadbalancing/

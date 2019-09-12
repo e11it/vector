@@ -74,7 +74,10 @@ require 'net/http'
 # directory.=
 class Links
   VECTOR_ROOT = "https://github.com/timberio/vector"
+  VECTOR_COMMIT_ROOT = "#{VECTOR_ROOT}/commit"
   VECTOR_ISSUES_ROOT = "#{VECTOR_ROOT}/issues"
+  VECTOR_PRS_ROOT = "#{VECTOR_ROOT}/pull"
+  VECTOR_RELEASE_ROOT = "#{VECTOR_ROOT}/releases/tag"
   TEST_HARNESS_ROOT = "https://github.com/timberio/vector-test-harness"
 
   def initialize(links)    
@@ -300,8 +303,18 @@ class Links
         name = $1
         find_image!(name)
 
+      when /^url\.commit_([a-z0-9]+)$/
+        "#{VECTOR_COMMIT_ROOT}/#{$1}"
+
       when /^url\.issue_([0-9]+)$/
         "#{VECTOR_ISSUES_ROOT}/#{$1}"
+
+      when /^url\.pr_([0-9]+)$/
+        "#{VECTOR_PRS_ROOT}/#{$1}"
+
+      when /^url\.v([a-z0-9-]+)$/
+        version = $1.gsub("-", ".")
+        "#{VECTOR_RELEASE_ROOT}/#{$1}"
 
       when /^url\.(.*)_(sink|source|transform)_issues$/
         name = $1

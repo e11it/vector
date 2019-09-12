@@ -121,7 +121,7 @@ where it left off.
 [docs.stdin_source]: ../../../usage/configuration/sources/stdin.md
 [docs.topologies.centralized]: ../../../setup/deployment/topologies.md#centralized
 [docs.topologies.stream-based]: ../../../setup/deployment/topologies.md#stream-based
-[docs.updating]: ../../../usage/administration/updating.md
+[docs.updating]: ../../../usage/administration/updating
 [docs.vector_sink]: ../../../usage/configuration/sinks/vector.md
 [docs.vector_source]: ../../../usage/configuration/sources/vector.md
 [url.big_query_streaming]: https://cloud.google.com/bigquery/streaming-data-into-bigquery

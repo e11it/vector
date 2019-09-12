@@ -1,0 +1,85 @@
+---
+description: Vector v<%= release.version %> release notes: <%= summary(release) %>.
+---
+
+# v<%= release.version %> Release Notes
+
+![Vector v<%= release.version %> release][images.v<%= release.version %>]
+
+---
+
+* [**Changes**](#changes) - [since v<%= release.last_version %>](<%= release.compare_url %>)
+<%- if release.breaking_changes.any? -%>
+<%= render_toc_item(release.breaking_changes, "breaking change").indent(2) %>
+<%- end -%>
+<%- if release.new_features.any? -%>
+<%= render_toc_item(release.new_features, "new feature").indent(2) %>
+<%- end -%>
+<%- if release.enhancements.any? -%>
+<%= render_toc_item(release.enhancements, "enhancement").indent(2) %>
+<%- end -%>
+<%- if release.performance_improvements.any? -%>
+<%= render_toc_item(release.performance_improvements, "performance improvement").indent(2) %>
+<%- end -%>
+<%- if release.bug_fixes.any? -%>
+<%= render_toc_item(release.bug_fixes, "bug fix").indent(2) %>
+<%- end -%>
+* [**Updating**](#updating)-  [download][<%= release.short_link %>]<% if release.upgrade_guide? %>, [upgrade guide][<%= release.upgrade_guide_short_link %>]<% end %>
+* [**Contributors**](#contributors)
+* [**Community**][url.community] - [chat/forum][url.vector_chat], [mailing list][url.mailing_list]
+* [**Roadmap**][url.roadmap] - [vote on new features][url.vote_feature]
+
+---
+
+## Changes
+
+<%- if release.breaking_changes.any? -%>
+### Breaking Changes!
+
+<%= render_grouped_commits(release.breaking_changes, "breaking change") %>
+
+<%- end -%>
+<%- if release.new_features.any? -%>
+### New Features
+
+<%= render_grouped_commits(release.new_features, "new feature", categories: false) %>
+
+<%- end -%>
+<%- if release.enhancements.any? -%>
+### Enhancements
+
+<%= render_grouped_commits(release.enhancements, "enhancement") %>
+
+<%- end -%>
+<%- if release.performance_improvements.any? -%>
+### Performance Improvements
+
+<%= render_grouped_commits(release.performance_improvements, "performance improvement") %>
+
+<%- end -%>
+<%- if release.bug_fixes.any? -%>
+### Bug Fixes
+
+<%= render_grouped_commits(release.bug_fixes, "bug fix") %>
+
+<%- end -%>
+## Updating
+
+<%- if release.upgrade_guide? -%>
+***This release includes a [special upgrade guide][<%= release.upgrade_guide_short_link %>. It is *strongly* recommended that users follow this guide for a smooth upgrade experience.***
+<%- else -%>
+Please see the [updating docs][docs.updating] to update for your specific platform.
+<%- end -%>
+
+## Contributors
+
+Thank you to all of our contributors:
+
+<%- release.authors.each do |author| -%>
+* <%= author %>
+<%- end -%>
+---
+
+<p align="center">
+  Developed with ❤️ by <strong><a href="https://timber.io">Timber.io</a></strong>
+</p>

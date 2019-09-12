@@ -1,0 +1,265 @@
+1357a3fa6b9acd0dd1d4b9e577969bf0594a5691	perf(observability): Add initial rework of rate limited logs (#778)	Lucio Franco	Thu Sep 12 12:12:12 2019 -0400
+bf81efdddf801232aa44ab76184e1368f1ce4f78	chore(operations): Increase docker-release timeout (#858)	Lucio Franco	Thu Sep 12 10:38:59 2019 -0400
+9705ae833c918189f786ac72c6f974102385911b	feat(new transform): New `add_tags` transform (#785)	Alexey Suslov	Thu Sep 12 17:32:50 2019 +0300
+9705ae833c918189f786ac72c6f974102385911b	feat(new transform): New `remove_tags` transform (#785)	Alexey Suslov	Thu Sep 12 17:32:50 2019 +0300
+4cd5e539565732fd1289bc9f5ddba2897404f441	feat(new sink): New `file` sink (#688)	Kirill Taran	Wed Sep 11 18:55:02 2019 +0200
+ee527daf254144bdbf78e8aeb87febfb61816bde	docs: update stream-based diagram	Ben Johnson	Wed Sep 11 11:45:30 2019 -0400
+ff83f94362d841270c71abbcf415776d0b6e78c3	docs: update roadmap link	Ben Johnson	Wed Sep 11 11:33:48 2019 -0400
+e331a886afbf7ce5db4296321449a16bc1ed41e1	improvement(file source): favor older files and allow configuring greedier reads (#810)	Luke Steensen	Wed Sep 11 09:39:43 2019 -0500
+c3cbc55477c477d7a7b3ff7cd7b216b412ed1c14	docs: clarify sampler transform rate documentation	Luke Steensen	Wed Sep 11 09:36:09 2019 -0500
+a7d237573f4b60235b21973a9c3f5c0b9362e03f	docs: gitbook straight doesnt escape |, so we will have to live with \|	Ben Johnson	Tue Sep 10 15:37:23 2019 -0400
+cd4637f154ec1b4e41918516d5ae0bac62bd63e6	docs: use &#124; for the pipe character...gitbook	Ben Johnson	Tue Sep 10 15:36:11 2019 -0400
+2f5c8898a2867701242be3691cc9a5f5ec30ba2a	docs: add SUMMARY.md.erb template	Ben Johnson	Tue Sep 10 15:35:19 2019 -0400
+049d94e3ba49a869dd30717ef09cf6e8854e1853	docs: use literals when escaping |	Ben Johnson	Tue Sep 10 15:34:57 2019 -0400
+ae507430d4e9ff704803f31ef5367319bbfb6497	docs: gitbook doesnt like double escaped | characters	Ben Johnson	Tue Sep 10 15:33:20 2019 -0400
+7b25d9170d327c6e2078cad837259b1aad7e5e6e	docs: fix file source table escaping	Ben Johnson	Tue Sep 10 15:30:34 2019 -0400
+1f488eec08cf518e7199adb05b81d38f3cbb0995	docs: kafka souce it an at_least_once delivery guarantee	Ben Johnson	Tue Sep 10 12:09:51 2019 -0400
+538b1e789330589cc970166c21daa87b629d3592	docs: add note about kafka topic pattern matching, ref https://github.com/timberio/vector/issues/819	Ben Johnson	Tue Sep 10 12:08:39 2019 -0400
+81778163c916b1a94756b19c7313c904fe666721	docs: fix path detection	Ben Johnson	Tue Sep 10 12:05:27 2019 -0400
+dbfbf081fcfba499c3cd152b5e2f1b84517f694a	docs: fix sink links	Ben Johnson	Tue Sep 10 10:55:33 2019 -0400
+de5940ed2592a59a3f86bb5c35b0f019304331d2	docs: generate SUMMARY.md to ensure new components show up in the side bar	Ben Johnson	Tue Sep 10 10:50:48 2019 -0400
+33c48a6482ef7b7a5bd11bb4d867a4f97908d93e	docs: add kafka source to summary.md	Ben Johnson	Tue Sep 10 10:41:48 2019 -0400
+e4f5b2630ad9e537b3e576ab73f468855b0f46eb	docs: Add bundler to requirements (#845)	Matthias Endler	Tue Sep 10 16:36:15 2019 +0200
+94cadda25e552b0eb82e58ea85eda10e6b787197	improvement(journald source): Add checkpointing support (#816)	Bruce Guenter	Mon Sep 9 10:22:35 2019 -0600
+c83e7e0c7c3a994c817c4a8ae0ac41c3a6c1818d	fix(elasticsearch sink): Make the headers and query tables optional. (#831)	Bruce Guenter	Thu Sep 5 14:12:25 2019 -0600
+c8736ea623df8ed17cd04478785522459bd4c105	fix(operations): Fix docker nightly builds (#830)	Lucio Franco	Thu Sep 5 14:27:46 2019 -0400
+e9b5988bd26c550c2308ba65798872634fe6a4f8	improvement(file source): allow aggregating multiple lines into one event (#809)	Luke Steensen	Wed Sep 4 17:16:50 2019 -0500
+1b8f2bb9f2b2ec60ba02a0be6f449be19950f8eb	chore(testing): Topology test refactoring (#748)	Bittrance	Wed Sep 4 21:46:24 2019 +0200
+1dac7d8c3e399d750891bbe74fb0580c179e4138	improvement(http sink): Add support for unverified HTTPS (#815)	Bruce Guenter	Tue Sep 3 15:37:02 2019 -0600
+928e37f4de188134565e05e04943e04dcc95e6a0	chore(testing): Add missing clickhouse integration test feature (#818)	Markus Holtermann	Tue Sep 3 23:27:30 2019 +0200
+712a7219aeb2e8f4fe87efdbcf11493dc0cb9d97	chore(udp source): Update to `tokio-udp` v0.1.5 (#817)	Lucio Franco	Tue Sep 3 14:12:43 2019 -0400
+1c6dd7b0b07be08f3c8b794d58d9c0f32c07454f	chore(udp source): Use new UdpFramed (#808)	ktff	Thu Aug 29 21:18:36 2019 +0200
+c0f8e78195e88457589d95eaa731a3ab699132d2	improvement(file source): make fingerprinting strategy configurable (#780)	Luke Steensen	Tue Aug 27 21:13:06 2019 -0500
+2ee1c39c251344bca78caa29824927b2c967ca84	docs: fix tcp sink docs formatting issues	Ben Johnson	Tue Aug 27 19:37:18 2019 -0400
+0f72a2b1669a97e4838d3ca852d2f68a878915f4	feat(new source): Initial `journald` source implementation (#702)	Bruce Guenter	Tue Aug 27 17:29:43 2019 -0600
+73a092647ef36db3b489a760b75da81cc27ef608	improvement(tcp sink): Add support for TLS (#765)	Bruce Guenter	Tue Aug 27 15:25:00 2019 -0600
+4d3d5d5a79ef5124ec8a96acec558b4e63026bcb	chore(testing): add test for tokenizer handling multiple spaces	Luke Steensen	Tue Aug 27 15:29:58 2019 -0500
+90bded60b2ba5618dbfbed35c7f6ac000ca5a40b	chore(testing): add build steps as part of overall testing (#788)	Binary Logic	Tue Aug 27 14:24:59 2019 -0400
+19aef1601e7c2a03b340d2af0b1d4849d9a48862	fix(aws_cloudwatch_logs sink): `encoding = "text"` overrides (#803)	Bittrance	Tue Aug 27 17:42:00 2019 +0200
+ed7605a0aeb07e16385907cc56b190345f088752	chore(operations): Docker build image tweaks (#802)	Bruce Guenter	Mon Aug 26 17:38:18 2019 -0600
+15cd77ee9f65bc749ed17cf3673e06ca02d25a2b	feat(new source): Add new `kafka` source (#774)	Alexander Rodin	Mon Aug 26 22:11:32 2019 +0300
+3a57fe52addb3c7f0760437f31518fb9ed8f1bf0	fix(operations): Use GNU ld instead of LLVM lld for x86_64-unknown-linux-musl (#794)	Alexander Rodin	Sun Aug 25 19:50:55 2019 +0300
+5f88b0aa44e1909736a842f9311ae3c54f0d99c2	docs: update github label links to use new lowercase format	Ben Johnson	Sat Aug 24 14:21:10 2019 -0400
+b504f8542a57991b59a7fbd233712afdff172383	docs: remove sinks guidelines from docs and put them in contributing.md	Ben Johnson	Sat Aug 24 11:35:50 2019 -0400
+0296c9e0553b63de1d2e8fe616da12c9233b67db	docs: merge DEVELOPING.md into CONTRIBUTING.md	Ben Johnson	Sat Aug 24 11:30:43 2019 -0400
+e74e4694f5358154b51cbb96475972498f01d426	improvement(lua transform): Add tags support to log_to_metric transform (#786)	Alexey Suslov	Sat Aug 24 17:32:34 2019 +0300
+af1a700c1b79c542b41a677b14356a1c4c8291fa	docs: fix relative linking on root docs pages, ref: https://github.com/timberio/vector/pull/793	Ben Johnson	Sat Aug 24 10:25:52 2019 -0400
+a02ea63fc70d6b1b2c736e48fc203a09e439305b	docs: update data model docs with relevant changes	Ben Johnson	Sat Aug 24 10:17:16 2019 -0400
+990714c5b9fce922f05720ab3b84e1aec8b39826	chore(operations): Restore rust-toolchain after building (#792)	Alexander Rodin	Sat Aug 24 06:15:03 2019 +0300
+758d646be0c9f8dd1dca5c997dc57a3541eafcec	docs: fix source output types	Ben Johnson	Fri Aug 23 23:12:49 2019 -0400
+5e7132806adfad922a165a5da0f6c0ac3a5d0854	docs: update add companies link	Ben Johnson	Fri Aug 23 14:44:18 2019 -0400
+65bb96690c29e474d63ab1850ce2904c466a97e5	docs: add companies list (#789)	Binary Logic	Fri Aug 23 12:20:41 2019 -0400
+b6fcdc1176f3586f47f9593294c3fc81c6b08492	docs: add log/metrics correlation feature	Ben Johnson	Fri Aug 23 12:04:07 2019 -0400
+761993432a817176ba89ead07b681c36e3b3a1f7	improvement(prometheus sink): add namespace config (#782)	Alexey Suslov	Fri Aug 23 09:42:21 2019 +0300
+7e8e7a2417244e58082c855576898d9b5edb1971	docs: update cloudwatch examples	Ben Johnson	Wed Aug 21 15:40:44 2019 -0400
+38ba67ede2adfb8aba59c161dd47b05a519c1426	docs: fix authentication list, attempt 2	Ben Johnson	Wed Aug 21 15:00:40 2019 -0400
+28d62b40b19e56dfaeb851f5313ef937af9d9c79	docs: fix authentication list	Ben Johnson	Wed Aug 21 14:59:19 2019 -0400
+6ff75029425ab791f3b63818c74b55481be45139	docs: fix partitioning language	Ben Johnson	Wed Aug 21 14:29:02 2019 -0400
+48778f848a8b3ee934a28c796d69589eab9b9242	chore(operations): Only notify on failed/fixed master builds (#779)	Jesse Szwedko	Tue Aug 20 16:26:31 2019 -0400
+6bbd5c429706b0ca898e9cefb3d44c767adfac61	docs: fix UDP docs typo	Ben Johnson	Tue Aug 20 13:52:23 2019 -0400
+546ba47f692d3deea48a067d419be3c5bda42121	docs: fix errors in udp source docs	Ben Johnson	Tue Aug 20 13:50:57 2019 -0400
+760d21bb84bddb692e7ac31ac8a8a2e0a86784ab	docs: fix from archive installation typos	Ben Johnson	Tue Aug 20 13:46:53 2019 -0400
+ff0d46f2236de6dc1bb81c1a9f898a9bf378c484	chore: keep nightly builds (#772)	Binary Logic	Tue Aug 20 13:43:35 2019 -0400
+ab9aff1340786e8bac0ce4b7eeff31ff90e746d7	improvement(prometheus sink): add labels support (#773)	Alexey Suslov	Tue Aug 20 19:22:02 2019 +0300
+8a29c615e59e5e8728d08b09bfadc92739aa75ec	docs: add udp source	Ben Johnson	Mon Aug 19 21:07:51 2019 -0400
+c71c421d013d4bd68223982a36d73c3805bb4886	docs: add clickhouse sink documentation	Ben Johnson	Mon Aug 19 21:02:35 2019 -0400
+d723a95ce9ff8689635c6bed9b4ec78a1daea81b	improvement(elasticsearch sink): Add support for custom query parameters (#766)	Bruce Guenter	Mon Aug 19 15:56:29 2019 -0600
+8361f6a36ce604e39ea124b2864060c5cfa680ae	chore: Error type for types conversion (#735)	Bruce Guenter	Fri Aug 16 14:55:42 2019 -0600
+bed79bbaf9ed5ac566b1765ff989a4cbdd5aefcc	feat(new sink): Initial `clickhouse` sink implementation (#693)	Luke Steensen	Fri Aug 16 13:58:08 2019 -0500
+a55ed98f2aecce097f7a4e31b424e6ad47a4703e	chore: Add rust-toolchain file and bump to 1.37 (#761)	Lucio Franco	Thu Aug 15 18:47:27 2019 -0400
+252d145caa473a97b93051178b00ddfd7436cc46	improvement(metric data model): add tags into metrics model (#754)	Alexey Suslov	Thu Aug 15 19:33:42 2019 +0300
+b0d58784a917931f8bdc0e16981bd2ff62108472	docs: Add guidance for writing healthchecks (#755)	Luke Steensen	Thu Aug 15 10:59:10 2019 -0500
+7d2427ff1afa2addf29d96b5508133628b1e4e50	improvement(aws_cloudwatch_logs sink): Add dynamic group creation (#759)	Lucio Franco	Thu Aug 15 11:50:40 2019 -0400
+18abb24e03f1e5ec1613ed44ad1674ba8765361f	feat(new sink): Initial `aws_cloudwatch_metrics` sink implementation  (#707)	Alexey Suslov	Thu Aug 15 11:43:59 2019 +0300
+60fe033ae52bf2fd7558b17037d37c9e236a02d1	chore(docs): fix docs generator file ext	Luke Steensen	Wed Aug 14 17:05:21 2019 -0500
+0d0fcdfb226394ca6f26f55cd24785cc948f49d7	improvement(elasticsearch sink): Add support for additional headers to the Elasticsearch sink (#758)	Bruce Guenter	Wed Aug 14 15:40:06 2019 -0600
+37c998922a2a8ae96d17e82e6fd56c41679c66f8	fix(prometheus sink): Update Metric::Set usage (#756)	ktff	Wed Aug 14 22:47:44 2019 +0200
+756b115fe4db5e81358c61f88444c87010ec9268	feat(new source): Initial `udp` source implementation (#738)	ktff	Wed Aug 14 22:19:27 2019 +0200
+014d6f63044476c541f9f3f0f9f1092e2446ca05	improvement(prometheus sink): Support sets (#733)	ktff	Wed Aug 14 22:16:35 2019 +0200
+584196c14caa150bc97edc39e339976c2927cd1e	fix(config): reload with unparseable config (#752)	Kirill Taran	Wed Aug 14 16:50:47 2019 +0200
+a2196b89075bbd71c82340bcab607a8eca72d1dc	improvement(elasticsearch sink): Add HTTP Basic authorization (#749)	Bruce Guenter	Tue Aug 13 16:02:21 2019 -0600
+fdc863ce7f757c75a277818195fdbfe170963765	chore: Ignore topology replace source and transform (#740)	Lucio Franco	Tue Aug 13 11:19:15 2019 -0400
+dd99c6cdf430f86285856ead0d75c2e1dab4f104	docs: fix typo	Ben Johnson	Mon Aug 12 20:15:05 2019 -0400
+59f3a185cdc9038b2cdc78c027239f6f241e03e9	chore: Hot fix (cargo-fmt)	Kirill Taran	Mon Aug 12 15:27:11 2019 +0000
+2b8c1cdcaa5fd577770a8a5cf63fb60d4c7b50d7	improvement(config): Validation of sinks and sources for non-emptiness. (#739)	Kirill Taran	Mon Aug 12 17:12:06 2019 +0200
+f59065106149213c6227b7542c7b9e46f9caf119	docs: fix typos	Ben Johnson	Mon Aug 12 11:08:34 2019 -0400
+f23553a792214649acf091d2b71a23c837acee9f	docs: Fix typo in vector image (#744)	Matthias Endler	Mon Aug 12 16:48:17 2019 +0200
+9a2f2b1e25699b9083990cf32d1e13582de6455b	docs: Fix typos (#743)	Matthias Endler	Mon Aug 12 15:17:18 2019 +0200
+95a19e1f9c28fdcb4ba1c337d935cabb5a29b176	chore(operations): Improve x86_64-unknown-linux-musl build (#722)	Alexander Rodin	Sat Aug 10 18:34:16 2019 +0300
+adf0f1f5cc1828fd2be012d2487bc64caa748de3	fix(topology): It is now possible to reload a with a non-overlap… (#681)	Bittrance	Fri Aug 9 21:04:56 2019 +0100
+febdde0419fd7665916ea76bfb310ec1ad805c41	improvement(topology): Add sink healthcheck disable (#731)	Lucio Franco	Fri Aug 9 13:56:39 2019 -0400
+3a2990c4da5aef70caa106f4d7382dcf3fc1ec1e	docs: update sink flow diagrams	Ben Johnson	Fri Aug 9 11:25:50 2019 -0400
+db6829d7da7e7a3ffdf6086cadc1beb3455c79ce	chore: fix release-s3 error	Ben Johnson	Thu Aug 8 16:35:00 2019 -0400
+96b1e89bf47929edd361baf4f4da34ff40a5c8a8	improvement(metric data model): add timestamps into metrics (#726)	Alexey Suslov	Thu Aug 8 23:25:46 2019 +0300
+f22e3af44256d2c07b9f6fcc5369f94f7c405dd4	fix(log data model): don't serialize MapValue::Null as a string (#725)	Markus Holtermann	Fri Aug 9 05:27:17 2019 +1000
+5a7d1516c5c08cee44cc84043db10a8253380407	fix(security): RUSTSEC-2019-0011 by updating crossbeam-epoch (#723)	Lucio Franco	Thu Aug 8 11:41:13 2019 -0400
+84f87eaf788b61d07bb989410e7e74948f75ee12	chore(operations): remove filter on nightly builds	Ben Johnson	Wed Aug 7 22:33:00 2019 -0400
+e267f72beda5092984b0f6b4c92fb785037419b9	chore(testing): add prometheus histograms test (#719)	Alexey Suslov	Wed Aug 7 19:25:24 2019 +0300
+1bf385dea6f4d7a02aebc9c3cc010defe5d56277	chore(testing): Use a locked down version of localstack (#720)	Lucio Franco	Wed Aug 7 12:06:55 2019 -0400
+e4108bc1b067ac83aa0dc85fcab9564af75367ef	chore(metric data model): use double for storing metric values (#717)	Alexey Suslov	Wed Aug 7 18:02:14 2019 +0300
+3c36de2691c263dfbbda747d3d328b445ec174ff	docs: use shorter component ids	Ben Johnson	Tue Aug 6 14:19:26 2019 -0400
+855b00793cd4b2cee35788a020d1e729a02b5005	improvement(prometheus sink): Support histograms (#675)	Alexey Suslov	Tue Aug 6 19:43:06 2019 +0300
+bedccf409b61c7eeaa9d96126fed184ff0df27fe	chore: all new * as a commit title category	Ben Johnson	Tue Aug 6 11:42:04 2019 -0400
+495d8be6299de55d5e31a84cfe467f263582d9df	docs: fix duplicate section references	Ben Johnson	Mon Aug 5 23:41:36 2019 -0400
+929026eb7bdeea9459ab81324124f46b85674c78	docs: aws_s3_sink encoding is not required	Ben Johnson	Mon Aug 5 23:21:07 2019 -0400
+a9993b8e1aa6557be5ddef47cc3d305fe0a50a56	docs: add valid scopes	Ben Johnson	Mon Aug 5 23:06:48 2019 -0400
+9b7b786d74e1ad57322ae7f5e3ec5bcd2073d9cf	docs: fix typo	Ben Johnson	Mon Aug 5 22:37:34 2019 -0400
+4c0046c54cd7bef189a7a9422f3b7608ecb17ebd	docs: remove false default values that communicate dynamic behavior	Ben Johnson	Mon Aug 5 22:36:17 2019 -0400
+67bbaa52e35e1736f383f995a0399c9960d34a24	docs: fix html escaping issues	Ben Johnson	Mon Aug 5 22:18:02 2019 -0400
+906bb21fe220d827b0fbc018d223bda0792d6006	docs: add html escaping	Ben Johnson	Mon Aug 5 22:14:20 2019 -0400
+e190e96e925d819d7460fab64f37fdb4241b88ad	improvement(file source): fall back to global data_dir option (#644) (#673)	Denis Andrejew	Tue Aug 6 03:48:52 2019 +0200
+ce3bc8dd988539643df3f5a6447696a7ebac108f	docs: fix lua drop event example	Ben Johnson	Sun Aug 4 11:36:35 2019 -0400
+bb4e220318db02c9d52703d7a603f70b9731473d	docs: fix alternative suggestions	Ben Johnson	Sun Aug 4 11:32:10 2019 -0400
+7f9a86f5de31a3d2b17dc8a22b7ae27420eceed6	docs: update log_to_metric docs to reflect all metric types	Ben Johnson	Sun Aug 4 11:25:06 2019 -0400
+b317396794f97d66208379f2cfffe007ac1a51fa	docs: update enum language	Ben Johnson	Sun Aug 4 10:15:41 2019 -0400
+86fef80098e7e438852917dbcd58eec0e8e8ac44	docs: add summary for Vector config syntax	Ben Johnson	Sat Aug 3 15:59:09 2019 -0400
+d391ad95a259cab216f4848f7c938a612749e043	docs: fix template syntax broken link	Ben Johnson	Sat Aug 3 15:57:52 2019 -0400
+e37229641eac91eee4c9699b34ae821ad8548ada	docs: fix doc typo	Ben Johnson	Sat Aug 3 15:56:28 2019 -0400
+5406afbf6d5632be9202d83a4d1055c91d022549	docs: remote strftime comment in s3 key_prefix description	Ben Johnson	Sat Aug 3 15:55:56 2019 -0400
+7fea8ad0876a90a7b6bdc3e14f686978b5d109f3	docs: add documentation on Vectors template syntax	Ben Johnson	Sat Aug 3 15:52:47 2019 -0400
+57d57db514a0de09dcbd4f98405c9b9a26b1c027	chore(operations): fix build syntax error	Ben Johnson	Sat Aug 3 13:15:08 2019 -0400
+5eb88c35797cebf49e1ede178b94598a0afdd5eb	chore(operations): fix nightly builds, release to docker and s3	Ben Johnson	Sat Aug 3 13:13:29 2019 -0400
+4b066e6d7f40fd3cc6d967bfc527c0c8aa8c3718	docs: cleanup docker language	Ben Johnson	Sat Aug 3 11:15:11 2019 -0400
+b8ee40ead6b03b23f11940f2038dd0c10580e48b	chore(chore): update installer script to use musl statically linked archive	Ben Johnson	Sat Aug 3 11:06:08 2019 -0400
+7e161e6aa92f20e3b758fb0a87889fa05346ab18	docs: update chat to chat/forum since it servers both purposes now	Ben Johnson	Sat Aug 3 11:02:01 2019 -0400
+02cfaa1e6a78f08d0eba93cdb15a6049940f7d8a	docs: add data model diagram	Ben Johnson	Sat Aug 3 10:58:27 2019 -0400
+ecdf4ed715901b8a9c132b57df120b5bdf1a2f63	docs: fix docker html entity escaping	Ben Johnson	Fri Aug 2 18:31:21 2019 -0400
+b511fd9362421e6ac3b73187a8ac1f61ea309501	chore(operations): update vector docker images to reflect their base image (#705)	Binary Logic	Fri Aug 2 18:29:23 2019 -0400
+8fe6b2252bfe7bf20f17327a46771742eb80396c	improvement(elasticsearch sink): use templates for ES index and S3 key prefix (#686)	Luke Steensen	Fri Aug 2 16:40:06 2019 -0500
+fbed6bdddddc627f6400bf36a075fcd897a8b09a	fix(log data model): unflatten event before outputting (#678)	Lucio Franco	Fri Aug 2 17:24:18 2019 -0400
+12ce3a069bbc809a08d5561ddbd4593c318b9960	docs: recommend alpine docker image	Ben Johnson	Fri Aug 2 17:16:13 2019 -0400
+fb9595e5abc2072ec454c2e84e59a056cab5d65b	docs: attempt to fix data model type links	Ben Johnson	Fri Aug 2 16:32:51 2019 -0400
+f07e3ce41cea2492114e8b20d35f703843a825ac	docs: singularize log event types	Ben Johnson	Fri Aug 2 16:01:55 2019 -0400
+0d19588b28bab2f2c44760e610516c5ce17ad6b4	docs: expand on log event types	Ben Johnson	Fri Aug 2 15:58:47 2019 -0400
+8758a7c978fa62fe88960f4dd10ebc17a604a743	docs: fix subnav item names for log and event	Ben Johnson	Fri Aug 2 15:42:02 2019 -0400
+093bf3f5e7054cbfd58a4443a454e7532a8f844e	docs: fix path typo in subnav	Ben Johnson	Fri Aug 2 15:41:20 2019 -0400
+e57120ab88d37b817a207588bca03d377e9c94b0	docs: rename log and metric subnav items because Gitbook...	Ben Johnson	Fri Aug 2 15:40:31 2019 -0400
+9f2e7dda97814710e62fe8d1cf07ff2ee7d4ccf4	docs: rename log and metric event titles because gitbook...	Ben Johnson	Fri Aug 2 15:39:48 2019 -0400
+69a1c145621cc0a922f059f340d3fcd28938631b	docs: add log and metrics subnav items for the data model section	Ben Johnson	Fri Aug 2 15:37:59 2019 -0400
+05a2aecb33dd95e1b1e99f923767b2e40b082339	improvement(aws_kinesis_streams sink): Add configurable partition keys (#692)	Lucio Franco	Fri Aug 2 15:34:46 2019 -0400
+e70d1834e34c58ae0e31b630f3a148d5ed3c64d4	docs: cleanup musl archive language	Ben Johnson	Fri Aug 2 10:44:50 2019 -0400
+a9ec4a75d753f6e939df4b31b9d3ba8f700ff890	chore(operations): release nightly instead of on each commit (#703)	Binary Logic	Fri Aug 2 10:35:15 2019 -0400
+bce95689d801b35a635328f9524613da3b137b39	docs: remove musl warnings since it includes all features now	Ben Johnson	Fri Aug 2 09:24:55 2019 -0400
+c8a304590fdced8b867a8b3d1d44b86c67dd0bfb	docs: fix broken links	Ben Johnson	Thu Aug 1 18:54:58 2019 -0400
+4b0735f5b64da0c7d6aba1a15d803d1767048fe4	docs: fix docker.md parsing error	Ben Johnson	Thu Aug 1 18:34:07 2019 -0400
+c3345f5da237fcfb94caccdd88ab0adfb7e333eb	improvement(observability): Add rate limit notice when it starts (#696)	Lucio Franco	Thu Aug 1 18:14:05 2019 -0400
+df3df71d2b9c1b2f53f2590bc5bb0c1a639ff1c4	chore(operations): make binary stripping an option during the release process, fixes an issue stripping armv7 binaries	Ben Johnson	Thu Aug 1 18:00:03 2019 -0400
+22f8454d4b70496262f57e3f4e4232768fc30ebd	chore(operations): add TARGET env var to musl build archive step	Ben Johnson	Thu Aug 1 17:24:05 2019 -0400
+88726cb21b0c4284373cfd12ce1b230d307e8a07	chore: Remove extra debug flags	Lucio Franco	Thu Aug 1 13:35:34 2019 -0400
+c47d9cd610befbede9846c61437be748884f4c46	chore(operations): Fix build-archive script to support multiple features	Lucio Franco	Thu Aug 1 13:35:09 2019 -0400
+feca20d2ba5cba4c88bef431a1ec4988ba26f6c9	chore(operations): Disable armv7 musleabihf build (#698)	Lucio Franco	Thu Aug 1 11:57:01 2019 -0400
+d2df9ba321990a0bf5996f18135351fa8bbf296c	improvement(operations): Build for x86_64-unknown-linux-musl with all features and optimized binary size (#689)	Alexander Rodin	Thu Aug 1 18:52:16 2019 +0300
+e37995eec33941545694d8c9d8b784f081c4c785	chore: remove Slack since we no longer use Slack	Ben Johnson	Thu Aug 1 11:18:23 2019 -0400
+0ae355f76c66147032b6ef5e4bdab141bfd2eeef	docs: update documentation to reflect new help resources	Ben Johnson	Thu Aug 1 11:17:20 2019 -0400
+57bc070a11ef3141ee5829d043f3720e359da726	fix(networking): Retry requests on timeouts (#691)	Lucio Franco	Thu Aug 1 11:07:09 2019 -0400
+9675b5197d60d3ff6a3ddd81cd9b4ec08bc92576	improvement(elasticsearch sink): Default `doc_type` to `_doc` and make it op… (#695)	Lucio Franco	Thu Aug 1 11:06:41 2019 -0400
+9ec1c644e82b029b943a1017f8176e77b1e494bd	chore: remove forum references, we recommend filing a help issue or joining our Slack channel instead	Ben Johnson	Wed Jul 31 16:12:16 2019 -0400
+05032c6803bf1d45eaf2372a58d46fadaa9646bb	improvement(aws_cloudwatch_logs sink): Add retry ability to cloudwatch (#663)	Lucio Franco	Fri Jul 26 12:01:25 2019 -0400
+df6816f2432039236ba14361262012380b8f5c82	docs: replace some references to "sink" with `component.type` (#685)	Denis Andrejew	Fri Jul 26 16:53:55 2019 +0200
+89a32737baa90f36de69da19fe95ba6734283368	chore: Update nom from 0.5.0-beta2 to 0.5 (#679)	Lucio Franco	Thu Jul 25 15:53:32 2019 -0400
+6670fc00c576788fecb9e7f8321f76f2dc08eb6f	docs: minor fixes in getting-started page (#682)	Cédric Da Fonseca	Thu Jul 25 16:41:31 2019 +0200
+1fbd6a4eead61518d8678ca39b6baadbbec30314	improvement(log_to_metric transform): use templates for metric names in log_to_metric (#668)	Alexey Suslov	Wed Jul 24 09:56:17 2019 +0300
+f1dfaf90512f3ea8a8a0bee743bfb297b08657df	feat(new transform): add coercer transform (#666)	Bruce Guenter	Tue Jul 23 13:24:31 2019 -0600
+2ecb9897b3d469a0eb0c180db9ba371cde87443b	chore(operations): Use multi-stage builds for vector-slim Docker image (#672)	Binary Logic	Mon Jul 22 13:49:30 2019 -0400
+bd22713c4b544b82b56b079bd2ef7411af951226	chore(operations): fix broken build process	Ben Johnson	Mon Jul 22 13:44:46 2019 -0400
+01458f4e5764e6d06ca04b3a569eeb767ac58eee	docs: fix spelling in READMEs (#671)	Brian Kabiro	Mon Jul 22 20:21:26 2019 +0300
+6c47a6716206d066191d4e67d810df0f7f761c96	chore(operations): build x86_64-unknown-linux-musl with all features (#669)	Binary Logic	Mon Jul 22 13:13:53 2019 -0400
+0a4ef9774092eef2d9d48ec7167b73d46caf464a	docs: update batch_timeuot unit to seconds across all docs	Ben Johnson	Sun Jul 21 10:05:28 2019 -0400
+a69668faab8c759e40377e696e5750f6bc58f244	chore(operations): add support for armv7 releases, both gnueabihf and musleabihf (#662)	Binary Logic	Sun Jul 21 09:16:01 2019 -0400
+d6f3a1a4c2f8da71b950725f7bb164f526c12386	docs: switch batch_timeout from bytes to seconds	Ben Johnson	Fri Jul 19 11:10:53 2019 -0400
+6812ca83f8de0a5c2bd6d131f3c7026b2a223d57	docs: Use correct units in example batch timeouts (#664)	Alexander Rodin	Fri Jul 19 18:10:09 2019 +0300
+b4575e662c5d06eb52d43678c6031d095bfa06de	improvement(config): reusable templating system for event values (#656)	Luke Steensen	Thu Jul 18 14:23:44 2019 -0500
+075e1cca2744e3fb868e852236345c484ae4973e	chore(operations): add timberio/vector-alpine docker image (#659)	Binary Logic	Thu Jul 18 14:34:36 2019 -0400
+e3e31d04d87513f21083a094d90b79b358ed4cd8	chore(operations): remove labels support from log_to_metric (#657)	Alexey Suslov	Thu Jul 18 10:18:54 2019 +0300
+32d2f6ba6d47f5c7f4c031dc25a7026edf4f869d	improvement(log_to_metric transform): push Histogram and Set metrics from logs (#650)	Alexey Suslov	Thu Jul 18 09:52:43 2019 +0300
+75f05f4626323cb47cdfbf6caf6ca0030f500f15	fix(aws_s3 sink): retry HttpDispatch errors for s3 and kinesis (#651)	Luke Steensen	Wed Jul 17 17:03:11 2019 -0500
+c7654ce407fc525a22f0fa4b5a5fa949bb4247de	chore(operations): rename call when releasing to latest and edge channels in s3	Ben Johnson	Wed Jul 17 16:26:30 2019 -0400
+5099d14e6f809235e87f0ee95737ea7e67a5a8b6	chore(operations): add support for x86_64-unknown-linux-musl releases (#654)	Binary Logic	Wed Jul 17 16:03:29 2019 -0400
+4e1e9e21b71a9ccdc38a38d51b9727f332721f05	chore(tech debt): Update smallvec to `v0.6.10` (#652)	Lucio Franco	Wed Jul 17 15:18:07 2019 -0400
+1f2319f9b49260951824bce7c3d75548347f1d2a	improvement(operations): Add `jemallocator` feature flag (#653)	Lucio Franco	Wed Jul 17 15:04:24 2019 -0400
+1ea7e30d460f7f00be6d138f0d875ed8efbb0904	chore: add test around min file size for fingerprinting	Luke Steensen	Wed Jul 17 10:36:59 2019 -0500
+fc93a801ba5ae8ae90132727f3ad194691b6bfb0	improvement(console sink): accept both logs and metrics (#631)	Luke Steensen	Tue Jul 16 21:49:20 2019 -0500
+33489984d28285740d26dcd2bc3183dfafb9711f	chore(metric data model): Refactor metrics sampling, rename Timer to Histogram (#648)	Alexey Suslov	Tue Jul 16 22:02:24 2019 +0300
+fddfbe83ee89a890662872a6a614c8213da8d37b	improvement(grok_parser transform): add type coercion (#632)	Bruce Guenter	Tue Jul 16 13:01:23 2019 -0600
+a308ed2744bddf9f2b4b2607fec40800c622bd7b	chore(testing): test thread usage to ensure tests pass on all machines (#646)	Lucio Franco	Mon Jul 15 22:59:20 2019 -0400
+59592d3a1e62169ffe934c7773c4ebc3d6392630	docs: add convetional commits to contributing	Ben Johnson	Mon Jul 15 17:54:27 2019 -0400
+2a07d727b2acc57dd72746356dd5ad0284b23208	docs: add AWS env vars	Ben Johnson	Mon Jul 15 17:51:36 2019 -0400
+92dfdca8f99986961d4eb66ce480770700ee1994	docs: add exit codes	Ben Johnson	Mon Jul 15 17:47:38 2019 -0400
+0cd9c302dfbd37f320e56ac385801af6bdf18404	docs: Add validating page for administration docs	Ben Johnson	Mon Jul 15 17:40:12 2019 -0400
+81b9e4f06a8fe6b0ce5f3592921d6bebea7aa85f	docs: Add docs about file checkpointing	Ben Johnson	Mon Jul 15 16:46:33 2019 -0400
+b3d1a767b46302dc8d698812b960afce23c511b2	docs: Add reference to glob_minimum_cooldown option	Ben Johnson	Mon Jul 15 16:33:18 2019 -0400
+b420159287f19a2aa4405da6f90fcea733d9de28	docs: Fix Github labels query param	Ben Johnson	Mon Jul 15 16:23:48 2019 -0400
+7fa2515374f55848e128deb50e153488c9fe330f	docs: Fix sampler rate example	Ben Johnson	Mon Jul 15 16:18:43 2019 -0400
+de2f4b3a9f845f57b6e5d40342e8f4a64639f91d	docs: Add component context section	Ben Johnson	Mon Jul 15 16:17:41 2019 -0400
+dd48943579fe07525aa2f93a7ecf357617d54194	docs: Add fingerprint options for file source to docs	Ben Johnson	Mon Jul 15 15:43:12 2019 -0400
+f8aeff54adf9aa46175a98b5211705393d0c4c20	docs: Add sampler transform to summary.md	Ben Johnson	Mon Jul 15 15:34:50 2019 -0400
+fe54f1e9d28ea18c94063170819c2fced8397a26	docs: Add glob_minimum_cooldown option to file source docs	Ben Johnson	Mon Jul 15 15:33:43 2019 -0400
+1a4229093e15452f2c378a81e448ce85167709f3	docs: Use one consistent env var syntax	Ben Johnson	Mon Jul 15 15:04:19 2019 -0400
+0d0c9d62f2f737359331cc2a52d988850552f0fc	improvement(config): Improve configuration validation and make it more strict (#552)	Kirill Taran	Mon Jul 15 20:41:33 2019 +0200
+524355cde9009936fe5eeae0a85315bd3405dc94	chore: Add semtantic.yml to only check PR titles	Ben Johnson	Mon Jul 15 14:37:21 2019 -0400
+1176821bd86431ef8cf0b9db763a85828c3116c7	docs: Use the proper type in the blackhole example	Ben Johnson	Mon Jul 15 11:53:41 2019 -0400
+20f678c0d96ce9ad282abc34d30a23ce13f63a97	docs: Add doc sections for all sink egress methods	Ben Johnson	Sun Jul 14 17:56:04 2019 -0600
+f1e0938c5ef508dda26005e567d6aaab6eabe0ab	chore: Fix argument type (#639)	Ayhan	Sun Jul 14 20:42:28 2019 +0300
+0db4e693ec618ea21f5273c85c0810f15973353d	docs: Batch diagram language	Ben Johnson	Sat Jul 13 08:51:14 2019 -0600
+472bd3574089994d464e1b91746bfc35a382e934	docs: Fix authentication formatting	Ben Johnson	Sat Jul 13 08:49:50 2019 -0600
+5746533135b33aae4b35aee5feb169ade0284810	docs: Fix config example headers for transforms and sources	Ben Johnson	Sat Jul 13 08:43:59 2019 -0600
+4b76ae8e2dba91dd0943aa7947325c8ed2b7cdf4	docs: Add relevance text to options table	Ben Johnson	Sat Jul 13 08:30:34 2019 -0600
+150994527180a69eb848fffa9a810d7fe376d2d1	docs: Add relevant when... tag for options that depend on other options in docs	Ben Johnson	Sat Jul 13 08:23:08 2019 -0600
+fcbf1aef0eee29bc3a36f2cce7e5ab2387a0acb7	docs: Fix environment variable language in docs	Ben Johnson	Sat Jul 13 07:42:55 2019 -0600
+419b2f0f73c89d81eb636cb8af43a52489fca3cb	docs: Update grok_parser language	Ben Johnson	Fri Jul 12 16:51:55 2019 -0600
+94d6838e901d745ada07cc62649dbbc3cef52bcb	docs: Add examples to the add_fields docs	Ben Johnson	Fri Jul 12 13:12:16 2019 -0600
+c4976fd7d54d23cff1595d1de183ce04ba81153a	docs: Fix section references for fields that include Regex special characters	Ben Johnson	Fri Jul 12 10:34:05 2019 -0600
+c98f455cfc7dda43b2f09d5804134b3832ae3153	docs: Link to log data model in add fields docs	Ben Johnson	Fri Jul 12 09:44:16 2019 -0600
+a95201a3c1fe73f7d250f313fe786458bc9aa880	docs: Add default envirnoment variables section	Ben Johnson	Fri Jul 12 09:42:16 2019 -0600
+934011d78f8fc92bfff922a61bb0bf0269ad0ac7	chore: Fix cloudwatch test by dropping sink (#626)	Lucio Franco	Fri Jul 12 12:09:33 2019 -0400
+0fb311fbce5d4a304d82e50e186fd03636bf1c44	docs: Fix add_fields transform docs	Ben Johnson	Wed Jul 10 08:15:13 2019 -0600
+0820c1087f9c524d55a96f726a56afd09c2f0069	improvement(file source): Add File checkpoint feature. (#609)	apjones-proton	Fri Jul 12 10:08:40 2019 -0400
+4a88262f95ace846b60d4ebe2857d1c1d3170bbe	chore: Back out change to dash handling	Luke Steensen	Thu Jul 11 17:24:12 2019 -0500
+d8a8e961a35d2eb7dadf183a69f214a4637a47b0	improvement(aws_cloudwatch_logs sink): Add cloudwatch partitioning and refactor partition buffer (#519)	Lucio Franco	Thu Jul 11 17:36:24 2019 -0400
+e93621195a390383ae5fec131f2e01874ea842d8	improvement(cli): Add `--color` option and tty check for ansi colors (#623)	Lucio Franco	Thu Jul 11 17:32:52 2019 -0400
+009803467f4513827abbe4a28d8170a5593ea2c5	improvement(regex_parser transform): Log when regex does not match (#618	Bruce Guenter	Wed Jul 10 19:50:42 2019 -0600
+96fadd8decbae32b6ce55063566ba683e27cdc96	chore: File tests timeout instead of hang if channel is stuck open. (#612)	apjones-proton	Wed Jul 10 18:03:27 2019 -0400
+80347525540296db8e9a06140e9359093d9144a6	chore(operations): Debian 10 verification step (#615)	Binary Logic	Wed Jul 10 09:01:17 2019 -0600
+734aa228d859357c671c3e61732fdd49b1d9295b	chore(operations): Fix debian-slim install line in docs	Ben Johnson	Wed Jul 10 07:47:27 2019 -0600
+6eaa2912a8f2440fc968c87e0f6287da0f752291	docs: Dont use HTML characters in default value for docs	Ben Johnson	Tue Jul 9 22:11:45 2019 -0600
+2d1c24a8ced93db9496248a52271f5a0d0f6b534	docs: Restore docker installation instructions	Ben Johnson	Tue Jul 9 22:09:43 2019 -0600
+82274cca2047432ecc378f8343703dc5d96ab801	docs: Add section references to each option within the docs	Ben Johnson	Tue Jul 9 13:54:16 2019 -0600
+099f062c35c5888a79422d4ee1abca1e200d6a4b	docs: Fix lock file	Lucio Franco	Tue Jul 9 01:16:54 2019 -0400
+27fce01ed595969e716bac9c0f688b5813e81e4d	docs: Restore "send your first event" guide	Ben Johnson	Mon Jul 8 17:18:26 2019 -0600
+b44cc232bc9dd9cee1acac9726b18a02fff0ab7d	docs: Fix docs/README.md	Ben Johnson	Mon Jul 8 17:00:46 2019 -0600
+67a0031a34ba9e94bb772c9fcc0c7d9e2f052507	docs: Fix log_to_metrics examples	Ben Johnson	Mon Jul 8 16:50:21 2019 -0600
+7f54fcd82f45adcf2b5fa29cc1e68b7b5b8fd292	docs: Ensure "How It Works" sections are alphabetically sorted	Ben Johnson	Mon Jul 8 16:45:45 2019 -0600
+bd54765b1d394bb072b42a2239673dc263f05ddc	docs: Ensure docs links are relative	Ben Johnson	Mon Jul 8 16:41:36 2019 -0600
+7c5743a9cc2913b337bfbe96f8b0767d49d8ade2	docs: Add log_to_metric documentation	Ben Johnson	Mon Jul 8 12:35:12 2019 -0600
+8646a0104998dae7e341fe0a389ebdaaa181e6f1	improvement(aws_s3 sink): Add filename extension option and fix trailing slash (#596)	Lucio Franco	Mon Jul 8 17:13:49 2019 -0400
+368b73a22db806b750dff44ed3e7aaac1859d467	chore: Rename tracing crates (#608)	Lucio Franco	Mon Jul 8 16:47:14 2019 -0400
+5021837ba934214b6f7ffa3720c7553c1b17179f	docs: Fix README (#610)	Binary Logic	Mon Jul 8 14:37:49 2019 -0400
+6a9707d3c419aaa88d3f11a46acbf0e21c0c7bf6	improvement(observability): Initial rate limit subscriber (#494)	Lucio Franco	Mon Jul 8 13:12:32 2019 -0400
+ac1f714f0ab8bcd2449cf763da66341f141a3b8e	improvement(tokenizer transform): Convert "-" into "nil" (#580)	Andy Georges	Mon Jul 8 18:41:38 2019 +0200
+971640c239451aea5d217e72d84a0221dc4b7117	docs: Cleanup documentation headers	Ben Johnson	Sun Jul 7 21:22:29 2019 -0600
+6975b45c05db10550e7432a138dfe9144fd6f4b2	docs: Move dynamically generated docs to ERB templates (#601)	Binary Logic	Sun Jul 7 22:39:47 2019 -0400
+1d98e789c8db3cee3f45303ff73b102290ddbb97	docs: Add Ruby and Bundler 2 to development requirements (#600)	Alexander Rodin	Sun Jul 7 20:46:36 2019 +0300
+7e3cb94bacdbf26a7c0487f57696a46e420d8d2f	docs: Fix gauge misspelling (#594)	Binary Logic	Thu Jul 4 18:51:05 2019 -0400
+25ece4711cf918f321fc00e7d91efc5f582a69ef	docs: Fix include exclude (#593)	Binary Logic	Thu Jul 4 18:47:15 2019 -0400
+8fac6fe083e4fdfee270cbf1be18ed7cd4eee9e9	docs: Add env var example to add_fields documentation	Ben Johnson	Thu Jul 4 18:37:54 2019 -0400
+894c9df97e881483ee48b4319813c9132344e46c	docs: Fix documentation array syntax	Ben Johnson	Thu Jul 4 17:15:45 2019 -0400
+e05314708498fa5d97054ff15510478f8aa66893	docs: Resolve documentation typos and formatting issues	Ben Johnson	Thu Jul 4 17:14:01 2019 -0400
+b5c1cd7bad03ec37166d924b29dea17acc22b85a	docs: Add check for pending documentation changes (#592)	Binary Logic	Thu Jul 4 16:47:19 2019 -0400
+fbbf5d1d6a8dbd03208faa4fc5b3af577a97ac91	docs: Fix configuration documentation headings (#591)	Binary Logic	Thu Jul 4 12:47:37 2019 -0400
+e8682cc307ce3a74b719e809a388a20860aee658	docs: Cleanup documentation conventions (#590)	Binary Logic	Thu Jul 4 12:42:49 2019 -0400
+5f3a00216fecf17f44f3a5a6be032fe9e362bb3d	chore(testing): Reduce test threads from 8 to 4 (#587)	Lucio Franco	Thu Jul 4 11:05:10 2019 -0400
+92277fbfae7a1873a35ea75a725e9b71e963a0d5	chore: Rename tokio-trace to tracing (#578)	Lucio Franco	Wed Jul 3 22:48:31 2019 -0400
+4074d8430a183d3eaccca311044c3ad733785f57	chore: Add make signoff command in pull request template	Ben Johnson	Wed Jul 3 18:13:59 2019 -0400
+35afcc8ee85d2d826bf4feb348bb1b5c5e15b781	docs: Update Makefile and DEVELOPING.md (#570)	Lucio Franco	Wed Jul 3 15:43:04 2019 -0400
+b57af065e88ff915ef9b8450114394063615a5f5	docs: Use MiB not mib in docs (#577)	Binary Logic	Wed Jul 3 15:28:24 2019 -0400
+4fce85e98dac0d15edddc25adebe0db13b4c072f	docs: Link to License	Ben Johnson	Wed Jul 3 15:06:06 2019 -0400
+8de9ad3a22f0c4789a760b4f0e57a84163edddec	docs: Add DCO and update CONTRIBUTING.md (#571)	Binary Logic	Wed Jul 3 14:54:46 2019 -0400
+b6316953a480a5ee161c6a61b33b4d33de23434d	chore(testing): Fix tests	Alexey Suslov	Wed Jul 3 09:31:16 2019 +0300
+16da8e55e7408473a15adf045de6bf9ebf6517af	improvement(metric data model): Use floats for metrics values (#553)	Alexey Suslov	Wed Jul 3 09:22:28 2019 +0300
+d8eadb08f469e7e411138ed9ff9e318bd4f9954c	improvement(log_to_metric transform): output multiple metrics from a single log	Luke Steensen	Tue Jul 2 07:04:39 2019 -0500
+fe7f2b503443199a65a79dad129ed89ace3e287a	improvement(topology): adjust transform trait for multiple output events	Luke Steensen	Thu Jun 27 17:07:11 2019 -0500
+5b58adb048b5740e5420255141f33a58e280852f	chore: Remove makefile from list of languages	Lucio Franco	Tue Jul 2 16:40:04 2019 -0400
+7c4b6488841b86c64ce41aadf7c1552a87b27d0a	chore(operations): Use printf in the install.sh script	Ben Johnson	Tue Jul 2 15:33:19 2019 -0400
+7538d6eaae49666e4fc320a0f44425a69f789c38	chore(operations): Bump check-stable box size (#555)	Lucio Franco	Tue Jul 2 12:07:53 2019 -0400
+a703de875fa7181c78d080509bbfed427a63fd11	chore: make sure Cargo.lock gets updated on version bump	Luke Steensen	Tue Jul 2 08:46:47 2019 -0500
+15d6b26409761aa5eb15c70082fc02f83d1e949c	chore: Ensure new bumped version uses -dev	Ben Johnson	Tue Jul 2 02:04:50 2019 -0400

@@ -1,0 +1,11 @@
+<%- if commit.new_component? -%>
+New [`<%= commit.component_name %>` <%= commit.component_type %>][docs.<%= commit.component_name %>_<%= commit.component_type %>]
+<%- else -%>
+*<%= render_scope(commit.scope) %>*: <%= commit.description.capitalize %>
+<%- end -%>
+
+<%- if !commit.pr_number.nil? -%>
+ ([#<%= commit.pr_number %>][url.pr_<%= commit.pr_number %>])
+<%- else -%>
+ ([<%= commit.commit_short %>][url.commit_<%= commit.commit %>])
+<%- end -%>

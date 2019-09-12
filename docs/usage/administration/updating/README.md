@@ -38,10 +38,10 @@ data. We recommend provisioning at least 20% of head room, on all resources,
 to account for spikes and updating.
 
 
-[docs.apt.updating]: ../../setup/installation/package-managers/apt.md#updating
-[docs.docker.updating]: ../../setup/installation/platforms/docker.md#updating
-[docs.from_archives.updating]: ../../setup/installation/manual/from-archives.md#updating
-[docs.homebrew.updating]: ../../setup/installation/package-managers/homebrew.md#updating
-[docs.installation]: ../../setup/installation
-[docs.topologies]: ../../setup/deployment/topologies.md
-[docs.yum.updating]: ../../setup/installation/package-managers/yum.md#updating
+[docs.apt.updating]: ../../../setup/installation/package-managers/apt.md#updating
+[docs.docker.updating]: ../../../setup/installation/platforms/docker.md#updating
+[docs.from_archives.updating]: ../../../setup/installation/manual/from-archives.md#updating
+[docs.homebrew.updating]: ../../../setup/installation/package-managers/homebrew.md#updating
+[docs.installation]: ../../../setup/installation
+[docs.topologies]: ../../../setup/deployment/topologies.md
+[docs.yum.updating]: ../../../setup/installation/package-managers/yum.md#updating

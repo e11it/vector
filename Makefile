@@ -16,7 +16,7 @@ help:
 	@echo ""
 	@awk 'BEGIN {FS = ":.*##"; printf "Usage: make \033[36m<target>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-25s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-##@ Development
+##@ Development (for humans)
 
 bench: ## Run internal benchmarks
 	@cargo bench --all
@@ -44,6 +44,8 @@ generate: ## Generates files across the repo from the /.metadata.toml file
 fmt: ## Format code
 	@cargo fmt
 
+release: release-summary generate
+
 run: ## Starts Vector in development mode
 	@cargo run
 
@@ -54,7 +56,7 @@ test: ## Spins up Docker resources and runs _every_ test
 	@docker-compose up -d
 	@cargo test --all --features docker -- --test-threads 4
 
-##@ Releasing
+##@ Releasing (for CI)
 
 build-archive: ## Build a Vector archive for a given $TARGET and $VERSION
 	scripts/build-archive.sh
@@ -67,9 +69,6 @@ package-deb: ## Create a .deb package from artifacts created via `build`
 
 package-rpm: ## Create a .rpm package from artifacts created via `build`
 	@scripts/package-rpm.sh
-
-release: ## Interactive script that releases the next version (major or minor)
-	@scripts/release.sh
 
 release-deb: ## Release .deb via Package Cloud
 	@scripts/release-deb.sh
@@ -88,6 +87,10 @@ release-rpm: ## Release .rpm via Package Cloud
 
 release-s3: ## Release artifacts to S3
 	@scripts/release-s3.sh
+
+release-summary: ## Builds the release release-summary
+	@bundle install --gemfile=scripts/release/Gemfile
+	@scripts/release.rb
 
 version: ## Get the current Vector version
 	@echo $(_version)
