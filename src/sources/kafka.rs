@@ -35,6 +35,12 @@ pub struct KafkaSourceConfig {
     session_timeout_ms: u64,
     host_key: Option<String>,
     key_field: Option<String>,
+    #[serde(default = "default_security_protocol")]
+    security_protocol: String,
+    ssl_ca_location: Option<String>,
+    ssl_certificate_location: Option<String>,
+    ssl_key_location: Option<String>,
+    ssl_key_password: Option<String>,
 }
 
 fn default_session_timeout_ms() -> u64 {
@@ -43,6 +49,10 @@ fn default_session_timeout_ms() -> u64 {
 
 fn default_auto_offset_reset() -> String {
     "largest".into() // default in librdkafka
+}
+
+fn default_security_protocol() -> String {
+    "plaintext".into() // default in librdkafka
 }
 
 #[typetag::serde(name = "kafka")]
@@ -127,6 +137,12 @@ fn create_consumer(config: KafkaSourceConfig) -> Result<StreamConsumer, crate::E
         .set("enable.partition.eof", "false")
         .set("enable.auto.commit", "false")
         .set("client.id", "vector")
+        .set("security.protocol", &config.security_protocol)
+        // ssl options not supported if librdkafka build without ssl
+        .set("ssl.ca.location", &config.ssl_ca_location.unwrap_or("".into()))
+        .set("ssl.certificate.location", &config.ssl_certificate_location.unwrap_or("".into()))
+        .set("ssl.key.location", &config.ssl_key_location.unwrap_or("".into()))
+        .set("ssl.key.password", &config.ssl_key_password.unwrap_or("".into()))
         .create()
         .context(KafkaCreateError)?;
 
